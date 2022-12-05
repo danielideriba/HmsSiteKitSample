@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huawei.hmssitekitsample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HmsSiteKitSample"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.HmsSiteKitSample.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TextSearchActivity"
+            android:label="@string/title_activity_text_search" />
+        <activity
+            android:name=".DetailSearchActivity"
+            android:label="@string/title_activity_detail_search" />
+        <activity
+            android:name=".NearbySearchActivity"
+            android:label="@string/title_activity_nearby_search" />
+        <activity
+            android:name=".QuerySuggestionActivity"
+            android:label="@string/title_activity_query_suggestion" />
+        <activity
+            android:name=".QueryAutoCompleteActivity"
+            android:label="@string/title_activity_query_auto_complete" />
+        <activity
+            android:name=".SearchIntentActivity"
+            android:label="@string/title_activity_search_intent" />
+        <activity
+            android:name=".SearchFragmentActivity"
+            android:label="@string/title_activity_search_fragment" />
+    </application>
+
+</manifest>
